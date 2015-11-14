@@ -1,0 +1,35 @@
+1 安装:
+	sudo apt-get install git
+	git config --global user.name "your name"
+	git config --global user.email "email@example"
+2 创建版本库:
+	mkdir learngit
+	cd learngit
+	git init
+	git add <file>
+	git commit -m "comment"
+	git status
+	git diff
+3 版本回退:
+	git log
+	git log --pertty=oneine
+	git reset --hard <commit_id>
+	git reflog
+4 撤销删掉:
+	git checkout -- <file>
+	git reset HEAD <file>
+	git rm <file>
+5 远程仓库:
+	ssh-keygen -t rsa -C "email@example.com"
+	git remote add origin git@github.com:<accountname>/<respositoryname>.git
+	git push -u origin master
+	git push origin master
+	git clone git@github.com:<accountname>/<respositoryname>.git
+
+3 分支:
+   	git branch
+	git branch <name>
+	git checkout <name>
+	git checkout -b <name>
+	git merge <name>
+	git branch -d <name>	
